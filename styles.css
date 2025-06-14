@@ -86,7 +86,7 @@ body {
   display: block;
   width: 100%;
   max-width: 21rem;
-  height: 201px;
+  height: 12.5625rem;
   object-fit: cover;
   border-radius: 0.625em;
   background-color: var(--elements-background);
@@ -112,6 +112,10 @@ body {
   font-weight: 800;
   font-size: clamp(var(--text-lg), -0.395rem + 7.018vi, var(--text-xl));
   transition: 0.1s linear;
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
 }
 
 .card__heading:hover {
