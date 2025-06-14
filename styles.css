@@ -35,6 +35,7 @@
   --border-color: var(--c-gray-950);
   --text-color-primary: var(--c-gray-950);
   --text-color-secondary: var(--c-gray-500);
+  --text-hover: var(--c-yellow-500);
 
   --spacing-300: 1.5rem;
   --spacing-150: 0.75rem;
@@ -110,6 +111,11 @@ body {
   margin-block-start: var(--spacing-150);
   font-weight: 800;
   font-size: clamp(var(--text-lg), -0.395rem + 7.018vi, var(--text-xl));
+  transition: 0.1s linear;
+}
+
+.card__heading:hover {
+  color: var(--text-hover);
 }
 
 .card__description {
